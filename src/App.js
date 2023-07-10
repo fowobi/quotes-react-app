@@ -4,13 +4,13 @@ function App() {
   const [quote, setQuote] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:43339/quotes/random")
+    fetch("http://localhost:37971/quotes/random")
       .then((response) => response.json())
       .then((data) => setQuote(`${data.quote} - ${data.author}`));
   }, []);
 
   const handleNewQuote = () => {
-    fetch("http://localhost:43339/quotes/random")
+    fetch("http://localhost:37971/quotes/random")
       .then((response) => response.json())
       .then((data) => setQuote(`${data.quote} - ${data.author}`));
   };
