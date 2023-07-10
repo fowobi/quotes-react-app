@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.p-quotes {
+  border: 5px solid blue;
+  width: 50rem;
+  height: 10rem;
+  margin-left: 25rem;
+  font-size: 24px;
+}
+
+.r-quote{
+  text-align: center;
+}

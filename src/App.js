@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
 
 function App() {
+  const [quote, setQuote] = useState("");
+
+  useEffect(() => {
+    fetch("http://localhost:43339/quotes/random")
+      .then((response) => response.json())
+      .then((data) => setQuote(`"${data.quote} - ${data.author}`));
+  }, []);
+
+  const handleNewQuote = () => {
+    fetch("http://localhost:43339/quotes/random")
+      .then((response) => response.json())
+      .then((data) => setQuote(`"${data.quote} - ${data.author}`));
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1 className="r-quote">Random Quote:</h1>
+      <p className ="p-quotes" onClick={handleNewQuote}>{quote}</p>
     </div>
   );
 }
