@@ -66,8 +66,8 @@ function QuoteSearch({ quotes }) {
         onChange={handleSearch}
       />
       <ul>
-        {searchResults.map((quote) => (
-          <li key={quote.id}>
+        {searchResults.map((quote, index) => (
+          <li key={index}>
             <blockquote>
               <p>{quote.quote}</p>
               <footer>{quote.author}</footer>
