@@ -4,6 +4,7 @@ import RandomQuote from "./RandomQuote";
 import QuoteSearch from "./QuoteSearch";
 import AddQuote from "./AddQuote";
 import API_URL from "./config";
+import "./style.css";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
