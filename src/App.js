@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import RandomQuote from "./RandomQuote";
 import QuoteSearch from "./QuoteSearch";
 import AddQuote from "./AddQuote";
+import API_URL from "./config";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
 
   useEffect(() => {
     // Fetch quotes data from the server when the component mounts
-    fetch("https://tosin-quote-server.glitch.me/quotes")
+    fetch(`${API_URL}/quotes`)
       .then((response) => response.json())
       .then((data) => setQuotes(data));
   }, []);
