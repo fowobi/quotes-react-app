@@ -43,23 +43,7 @@ h3 {
     padding: 0;
 }
 
-/* RandomQuote.js */
-.r-quote {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-}
 
-.p-quotes {
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.p-quotes:hover {
-    color: #444;
-}
 
 /* QuoteSearch.js */
 h2 {
@@ -139,3 +123,57 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #444;
 }
+
+
+ .p-quotes {
+    border: 2px solid blue;
+    width: 50rem;
+    height: 10rem;
+    margin-left: 22rem;
+    font-size: 24px;
+    padding: 2rem;
+    background-color: pink;
+    color: blue;
+    cursor: pointer;
+    transition: color 0.3s ease;
+ } 
+
+ .p-quotes:hover {
+     color: #444;
+ }
+
+.p-quotes::before {
+    content: "“";
+    font-family: "Roboto";
+    color: #E0633A;
+    padding: 0.25rem;
+    font-size: 46px;
+}
+
+.r-quote {
+    text-align: center;
+    /* font-size: 24px;
+     margin-bottom: 10px;
+    color: #333; */
+}
+
+
+/* RandomQuote.js */
+/* .r-quote {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+} */
+
+/* .p-quotes {
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.p-quotes:hover {
+    color: #444;
+}
+
+*/

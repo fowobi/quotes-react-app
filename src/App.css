@@ -39,7 +39,7 @@
 
 
 /* App.css */
-.App {
+/* .App {
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -81,10 +81,10 @@ h2,
 h3 {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* RandomQuote.js */
-.r-quote {
+/* .r-quote {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
@@ -99,10 +99,10 @@ h3 {
 
 .p-quotes:hover {
   color: #444;
-}
+} */
 
 /* QuoteSearch.js */
-h2 {
+/* h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
@@ -137,10 +137,10 @@ blockquote p {
 blockquote footer {
   font-size: 14px;
   color: #777;
-}
+} */
 
 /* AddQuote.js */
-h2 {
+/* h2 {
   font-size: 24px;
   margin-bottom: 10px;
   color: #333;
@@ -178,4 +178,4 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #444;
-}
+} */

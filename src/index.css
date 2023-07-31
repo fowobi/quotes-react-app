@@ -12,24 +12,3 @@ code {
     monospace;
 }
 
-.p-quotes {
-  border: 5px solid blue;
-  width: 50rem;
-  height: 10rem;
-  margin-left: 22rem;
-  font-size: 24px;
-  padding: 2rem;
-  background-color:pink;
-  /* color: white; */
-}
-.p-quotes::before{
-    content: "“";
-    font-family: "Roboto";
-    color: #E0633A;
-    padding: 0.25rem;
-    font-size: 46px;
-}
-
-.r-quote{
-  text-align: center;
-}
