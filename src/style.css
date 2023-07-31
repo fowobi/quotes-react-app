@@ -136,6 +136,7 @@ button[type="submit"]:hover {
     color: blue;
     cursor: pointer;
     transition: color 0.3s ease;
+    
  } 
 
  .p-quotes:hover {
@@ -152,28 +153,7 @@ button[type="submit"]:hover {
 
 .r-quote {
     text-align: center;
-    /* font-size: 24px;
-     margin-bottom: 10px;
-    color: #333; */
+    
 }
 
 
-/* RandomQuote.js */
-/* .r-quote {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-} */
-
-/* .p-quotes {
-    font-size: 18px;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.p-quotes:hover {
-    color: #444;
-}
-
-*/

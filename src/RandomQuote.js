@@ -7,13 +7,13 @@ function RandomQuote() {
   useEffect(() => {
     fetch(`${API_URL}/quotes/random`)
       .then((response) => response.json())
-      .then((data) => setQuote(`${data.quote} - ${data.author}`));
+      .then((data) => setQuote(`${data.quote} | ${data.author}`));
   }, []);
 
   const handleNewQuote = () => {
     fetch(`${API_URL}/quotes/random`)
       .then((response) => response.json())
-      .then((data) => setQuote(`${data.quote} - ${data.author}`));
+      .then((data) => setQuote(`${data.quote} | ${data.author}`));
   };
 
   return (
