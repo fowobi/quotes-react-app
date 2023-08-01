@@ -67,7 +67,7 @@ ul {
 }
 
 blockquote {
-    border-left: 4px solid #333;
+    border-left: 4px solid royalblue;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -124,6 +124,17 @@ button[type="submit"]:hover {
     background-color: #444;
 }
 
+.p-quotes .author {
+    color: red;
+    
+}
+
+.p-quotes .separator {
+    color: green;
+    margin: 0 0.5rem;
+    
+    
+}
 
  .p-quotes {
     border: 2px solid blue;
@@ -153,8 +164,10 @@ button[type="submit"]:hover {
     font-size: 46px;
 }
 
+
 .r-quote {
     text-align: center;
+    
     
 }
 
