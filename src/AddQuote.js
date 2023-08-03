@@ -18,7 +18,9 @@ function AddQuote({ onAddQuote }) {
       <h2>Add New Quote</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="quote">Quote: </label>
+          <label className="author-p"htmlFor="quote">
+            Quote:{" "}
+          </label>
           <input
             type="text"
             id="quote"
@@ -27,7 +29,9 @@ function AddQuote({ onAddQuote }) {
           />
         </div>
         <div>
-          <label htmlFor="author">Author: </label>
+          <label className="author-p" htmlFor="author">
+            Author:{" "}
+          </label>
           <input
             type="text"
             id="author"
@@ -35,7 +39,7 @@ function AddQuote({ onAddQuote }) {
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
-        <button type="submit">Add Quote</button>
+        <button className="submit-add-quote" type="submit">Add Quote</button>
       </form>
     </div>
   );
