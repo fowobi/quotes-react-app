@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import API_URL from "./config";
+
+const apiUrl = process.env.REACT_APP_API_URL;
 
 function RandomQuote() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
 
   useEffect(() => {
-    fetch(`${API_URL}/quotes/random`)
+    fetch(`${apiUrl}/quotes/random`)
       .then((response) => response.json())
       .then((data) => {
         setQuote(data.quote);
@@ -15,7 +16,7 @@ function RandomQuote() {
   }, []);
 
   const handleNewQuote = () => {
-    fetch(`${API_URL}/quotes/random`)
+    fetch(`${apiUrl}/quotes/random`)
       .then((response) => response.json())
       .then((data) => {
         setQuote(data.quote);

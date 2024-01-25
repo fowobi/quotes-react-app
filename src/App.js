@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import RandomQuote from "./RandomQuote";
 import QuoteSearch from "./QuoteSearch";
 import AddQuote from "./AddQuote";
-import API_URL from "./config";
 import "./style.css";
 
+const apiUrl = process.env.REACT_APP_API_URL;
 function App() {
   const [quotes, setQuotes] = useState([]);
 
   useEffect(() => {
     // Fetch quotes data from the server when the component mounts
-    fetch(`${API_URL}/quotes`)
+    fetch(`${apiUrl}/quotes`)
       .then((response) => response.json())
       .then((data) => setQuotes(data));
   }, []);
