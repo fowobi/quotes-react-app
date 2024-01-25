@@ -4,8 +4,9 @@ import RandomQuote from "./RandomQuote";
 import QuoteSearch from "./QuoteSearch";
 import AddQuote from "./AddQuote";
 import "./style.css";
+import config from "./config";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL || config.apiUrl;
 function App() {
   const [quotes, setQuotes] = useState([]);
 

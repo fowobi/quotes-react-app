@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import config from "./config";
 
-const apiUrl = process.env.REACT_APP_API_URL;
+const apiUrl = process.env.REACT_APP_API_URL || config.apiUrl;
 
 function RandomQuote() {
   const [quote, setQuote] = useState("");
