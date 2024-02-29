@@ -15,7 +15,7 @@ function AddQuote({ onAddQuote }) {
 
   return (
     <div>
-      <h2>Add New Quote</h2>
+      <h2 className="add-new-quote">Add New Quote</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label className="author-p"htmlFor="quote">
@@ -39,7 +39,7 @@ function AddQuote({ onAddQuote }) {
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
-        <button className="submit-add-quote" type="submit">Add Quote</button>
+        <button type="submit" >Add Quote</button>
       </form>
     </div>
   );
