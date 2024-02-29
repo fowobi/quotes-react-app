@@ -379,10 +379,10 @@ button[type="submit"]:hover {
 
     input[type="text"]
      {
-        margin-left: 12rem; 
+        margin-left: 10rem; 
     }
     button[type="submit"]{
-        margin-left: 16rem;
+        margin-left: 13rem;
     }
 }
 
