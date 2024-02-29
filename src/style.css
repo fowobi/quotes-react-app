@@ -1,26 +1,19 @@
-
-/* body {
+body {
     background-image: url(https://images.unsplash.com/photo-1690475535676-a10d43382050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
     background-attachment: fixed;
     background-size: cover;
-   
-} */
-/* body {
-    background: url(https://images.unsplash.com/photo-1690475535676-a10d43382050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60) fixed;
-    background-size: cover;
-    background-position: center;
     margin: 0;
     padding: 0;
+    height: 100%; 
 }
-
-
-
 
 .App {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%; 
 }
 
 nav {
@@ -34,206 +27,6 @@ nav ul {
     font-weight: bold;
     flex-wrap: wrap;
     justify-content: center; 
-}
-
-nav li {
-    margin-right: 10px;
-}
-
-nav li:last-child {
-    margin-right: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-    background-color: #f0f0f0;
-}
-
-h1,
-h2,
-h3 {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-blockquote {
-    border-left: 4px solid royalblue;
-    padding: 10px;
-    margin-bottom: 10px;
-    
-}
-
-blockquote p {
-    margin: 0;
-    font-size: 16px;
-    color: blue;
-}
-
-blockquote footer {
-    font-size: 14px;
-    color: red;
-}
-
-
-.add-new-quote {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-    text-align:center;
-}
-
-form div {
-    margin-bottom: 10px;
-}
-
-label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-input[type="text"] {
-    
-    width: 50rem;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-left: 25rem;
-    margin-bottom: 10px;
-    
-}
-
-button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #444;
-}
-
-.p-quotes .author {
-    color: red;
-    
-}
-
-.p-quotes .separator {
-    color: green;
-    margin: 0 0.5rem;
-    
-    
-}
-
- .p-quotes {
-    margin-top: 12rem;
-    width: 50rem;
-    height: 10rem;
-    margin-left: 18rem;
-    font-size: 24px;
-    padding: 2rem;
-    background-color: pink;
-    color: blue;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    
-    
-    
- } 
-
- .p-quotes:hover {
-     color: #444;
- }
-
-.p-quotes::before {
-    content: "“";
-    font-family: "Roboto";
-    color: #E0633A;
-    padding: 0.25rem;
-    font-size: 46px;
-}
-
-
-.r-quote {
-    text-align: center;
-    
-    
-}
-.author-p{
-    text-align: center;
-    font-weight: bold;
-}
-.submit-add-quote{
-    margin-left: 44rem;
-}
-
-
-@media screen and (max-width: 600px) {
-    .App {
-        padding: 10px;
-    } */
-
-   
-
-    
-    /* .p-quotes {
-     width: 100%;
-        
-        
-        
-         } 
-    
-} */
-
-body {
-    background-image: url(https://images.unsplash.com/photo-1690475535676-a10d43382050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
-    /* background-image: url(https://images.unsplash.com/photo-1494537176433-7a3c4ef2046f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHF1b3RlcyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D); */
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-}
-
-.App {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box; /* Include padding and border in the total width */
-    height: 100%; /* Set height to 100% to fill the entire viewport */
-}
-
-nav {
-    margin-bottom: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    font-weight: bold;
-    flex-wrap: wrap;
-    justify-content: center; /* Centering navigation items on smaller screens */
 }
 
 nav li {
@@ -343,7 +136,7 @@ button[type="submit"]:hover {
     color: blue;
     cursor: pointer;
     transition: color 0.3s ease;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 .p-quotes:hover {
