@@ -203,12 +203,14 @@ button[type="submit"]:hover {
 
     input[type="text"]
      {
-        margin-left: 9rem; 
+        margin-left: 8rem; 
     }
     button[type="submit"]{
-        margin-left: 13rem;
+        margin-left: 10.5rem;
     }
-   
+   .author-p{
+    margin-right: 3rem;
+   }
       
 }
 
