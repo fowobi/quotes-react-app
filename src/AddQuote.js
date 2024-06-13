@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import config from "./config";
 
@@ -45,22 +46,24 @@ function AddQuote({ onAddQuote }) {
       <form onSubmit={handleSubmit}>
         <div>
           <label className="author-p" htmlFor="quote">
-            Quote:{" "}
+            Quote:
           </label>
           <input
             type="text"
             id="quote"
+            className="add-quote-input"
             value={quote}
             onChange={(e) => setQuote(e.target.value)}
           />
         </div>
         <div>
           <label className="author-p" htmlFor="author">
-            Author:{" "}
+            Author:
           </label>
           <input
             type="text"
             id="author"
+            className="add-quote-input"
             value={author}
             onChange={(e) => setAuthor(e.target.value)}
           />

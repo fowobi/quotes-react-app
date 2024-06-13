@@ -1,216 +1,236 @@
 
-:root{
-    --russian-violet: #190933ff;
-    --tea-green: #d3fad6ff;
-    --tea-green-2: #d1efb5ff;
-    --vanilla: #edeba0ff;
-    --sage: #c3c48dff;
-    --moss-green: #928c6fff; 
-}
+ :root {
+     --russian-violet: #190933ff;
+     --tea-green: #d3fad6ff;
+     --tea-green-2: #d1efb5ff;
+     --vanilla: #edeba0ff;
+     --sage: #c3c48dff;
+     --moss-green: #928c6fff;
+ }
 
+ body {
+     background-color: var(--sage);
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+     box-sizing: border-box;
+ }
 
-body {
-    background-color: var(--sage);
-    margin: 0;
-    padding: 0;
-    height: 100%; 
-}
+ .App {
+     max-width: 600px;
+     margin: 0 auto;
+     padding: 20px;
+ }
 
-.App {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    box-sizing: border-box;
-    height: 100%; 
-}
+ nav {
+     background-color: var(--russian-violet);
+     margin-bottom: 20px;
+ }
 
-nav {
-    margin-bottom: 20px;
-}
+ nav ul {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    font-weight: bold;
-    flex-wrap: wrap;
-    justify-content: center; 
-}
+ nav li {
+     margin: 5px 0;
+ }
 
-nav li {
-    margin-right: 10px;
-}
+ nav a {
+     color: white;
+     text-decoration: none;
+     padding: 10px 20px;
+     border-radius: 4px;
+     transition: background-color 0.3s ease;
+ }
 
-nav li:last-child {
-    margin-right: 0;
-}
+ nav a:hover {
+     background-color: var(--moss-green);
+ }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
+ h1,
+ h2,
+ h3 {
+     margin: 0 0 20px 0;
+     padding: 0;
+     text-align: center;
+ }
 
-nav a:hover {
-    background-color: #f0f0f0;
-}
+ ul {
+     list-style: none;
+     padding: 0;
+ }
 
-h1, h2, h3 {
-    margin: 0;
-    padding: 0;
-}
+ blockquote {
+     border-left: 5px solid var(--russian-violet);
+     padding: 10px;
+     margin-bottom: 10px;
+     background-color: var(--vanilla);
+     border-radius: 4px;
+ }
 
-ul {
-    list-style: none;
-    padding: 0;
-}
+ blockquote p {
+     margin: 0;
+     font-size: 18px;
+     color: darkblue;
+ }
 
-blockquote {
-    border-left: 3px solid red;
-    padding: 10px;
-    margin-bottom: 10px;
-}
+ blockquote footer {
+     font-size: 16px;
+     color: black;
+ }
 
-blockquote p {
-    margin: 0;
-    font-size: 18px;
-    color: darkblue;
-    
-}
+ /* AddQuote.js */
+ h2 {
+     font-size: 24px;
+     color: var(--russian-violet);
+ }
 
-blockquote footer {
-    font-size: 24px;
-    color:black;
-}
+ form div {
+     margin-bottom: 15px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
 
-/* AddQuote.js */
-h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333;
-    text-align: center;
-}
+ label {
+     font-size: 16px;
+     color: var(--russian-violet);
+     margin-bottom: 5px;
+ }
 
-form div {
-    margin-bottom: 10px;
-}
+ input.add-quote-input {
+     width: 80%;
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+ }
 
-label {
-    display: block;
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 5px;
-}
+ button[type="submit"] {
+     background-color: var(--russian-violet);
+     color: white;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 4px;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     display: block;
+     margin: 0 auto;
+ }
 
-input[type="text"] {
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    margin-left: 41rem;
-}
+ button[type="submit"]:hover {
+     background-color: var(--moss-green);
+     color: white;
+ }
 
-button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left:44rem;
-}
+ .p-quotes .author {
+     color: red;
+ }
 
-button[type="submit"]:hover {
-    background-color: #444;
-}
+ .p-quotes .separator {
+     color: green;
+     margin: 0 0.5rem;
+ }
 
-.p-quotes .author {
-    color: red;
-}
+ .p-quotes {
+     font-size: 24px;
+     padding: 1.5rem;
+     background-color: var(--vanilla);
+     color: var(--russian-violet);
+     cursor: pointer;
+     transition: color 0.3s ease;
+     text-align: center;
+     border-radius: 4px;
+ }
 
-.p-quotes .separator {
-    color: green;
-    margin: 0 0.5rem;
-}
+ .p-quotes:hover {
+     color: #444;
+ }
 
-.p-quotes {
-    font-size: 24px;
-    padding: 2rem;
-    background-color: pink;
-    color: blue;
-    cursor: pointer;
-    transition: color 0.3s ease;
-    text-align: center; 
-}
+ .p-quotes::before {
+     content: "“";
+     font-family: "Roboto";
+     color: var(--russian-violet);
+     padding: 0.25rem;
+     font-size: 36px;
+ }
 
-.p-quotes:hover {
-    color: #444;
-}
+ .r-quote {
+     text-align: center;
+ }
 
-.p-quotes::before {
-    content: "“";
-    font-family: "Roboto";
-    color: #E0633A;
-    padding: 0.25rem;
-    font-size: 46px;
-}
+ .author-p {
+     text-align: center;
+     font-weight: bold;
+ }
 
-.r-quote {
-    text-align: center;
-}
+ .date-added {
+     text-align: center;
+     color: red;
+ }
 
-.author-p {
-    text-align: center;
-    font-weight: bold;
-}
+ .spinner {
+     border: 4px solid rgba(0, 0, 0, 0.1);
+     width: 36px;
+     height: 36px;
+     border-radius: 50%;
+     border-left-color: #09f;
+     animation: spin 1s ease infinite;
+     margin: auto;
+ }
 
-.submit-add-quote {
-    margin-left: 0;
-}
-.date-added{
-    text-align: center;
-    color: red;
-}
-.spinner {
-    border: 4px solid rgba(0, 0, 0, 0.1);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border-left-color: #09f;
-    animation: spin 1s ease infinite;
-    margin: auto;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+ @keyframes spin {
+     0% {
+         transform: rotate(0deg);
+     }
 
-@media screen and (max-width: 600px) {
-    .App {
-        padding: 10px;
-    }
+     100% {
+         transform: rotate(360deg);
+     }
+ }
 
-    input[type="text"]
-     {
-        margin-left: 8rem; 
-    }
-    button[type="submit"]{
-        margin-left: 10.5rem;
-    }
-   .author-p{
-    margin-right: 3rem;
-   }
-      
-}
+ input.quote-search-input {
+     width: 80%;
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     display: block;
+     margin: 0 auto 20px auto;
+ }
 
+ @media screen and (max-width: 600px) {
+     .App {
+         padding: 10px;
+     }
+
+     nav ul {
+         flex-direction: column;
+         align-items: center;
+     }
+
+     nav li {
+         margin: 5px 0;
+     }
+
+     input.add-quote-input,
+     input.quote-search-input {
+         width: 100%;
+     }
+
+     .p-quotes {
+         font-size: 18px;
+         padding: 1rem;
+     }
+
+     .r-quote,
+     .author-p,
+     .date-added {
+         font-size: 18px;
+     }
+ }

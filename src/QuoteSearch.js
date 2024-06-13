@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 
 function QuoteSearch({ quotes }) {
@@ -21,6 +22,7 @@ function QuoteSearch({ quotes }) {
         type="text"
         placeholder="Search by quote or author..."
         value={searchTerm}
+        className="quote-search-input"
         onChange={handleSearch}
       />
       <ul>
@@ -38,4 +40,3 @@ function QuoteSearch({ quotes }) {
 }
 
 export default QuoteSearch;
-
